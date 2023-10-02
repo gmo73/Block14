@@ -7,6 +7,7 @@ const userInputString = prompt(
     "1,2,3,4,5"
   );
   
+
   // Split the string of numbers into an array of strings.
   const stringArray = userInputString.split(",");
   
@@ -36,8 +37,10 @@ const userInputString = prompt(
    * @param {number[]} numbers an array of integers
    * @returns {number} the length of the array
    */
-  function getLength(numbers) {
-    // TODO
+  function getLength(number) {
+    return numbers.length;
+
+
   }
   
   /**
@@ -45,16 +48,15 @@ const userInputString = prompt(
    * @returns {number} the sum of the numbers
    */
   function getSum(numbers) {
-    // TODO
+ 
   }
-  
   /**
    * @param {number[]} numbers an array of integers
-   * @returns {number} the mean of the numbers
+   * @returns {number + total} the mean of the numbers
    */
   function getMean(numbers) {
-    // TODO
-  }
+  let Mean = sum / numbers.length;
+  return Mean }
   
   /**
    * @param {number[]} numbers an array of integers
@@ -92,6 +94,4 @@ const userInputString = prompt(
    * @param {number[]} numbers an array of integers
    * @returns {number[]} the odd numbers in the array
    */
-  function getOdds(numbers) {
-    // TODO
-  }
+  function getOdds(numbers){}
