@@ -48,22 +48,38 @@ const userInputString = prompt(
    * @returns {number} the sum of the numbers
    */
   function getSum(numbers) {
- 
-  }
+    let sum=0
+    for(let i=0; i <numbers.length;i++){
+    sum = sum + numbers[i]
+    }
+    return sum;}
+    
   /**
    * @param {number[]} numbers an array of integers
    * @returns {number + total} the mean of the numbers
    */
   function getMean(numbers) {
-  let Mean = sum / numbers.length;
-  return Mean }
-  
+    let sum=0
+    for(let i=0; i <numbers.length;i++){
+    sum = sum + numbers[i]
+    }{
+    mean = sum / numbers.length;
+    }
+    return mean}
   /**
    * @param {number[]} numbers an array of integers
    * @returns {number} the smallest of the numbers
    */
   function getMin(numbers) {
-    // TODO
+  let min= numbers [0];
+  for (let i=0; i <numbers.length;i++){
+    if (numbers[i] < min){
+      min=numbers[i];
+
+    }
+  }
+
+    return min;
   }
   
   /**
@@ -71,25 +87,33 @@ const userInputString = prompt(
    * @returns {number} the largest of the numbers
    */
   function getMax(numbers) {
-    // TODO
+    let max= numbers [0];
+  for (let i=0; i <numbers.length;i++){
+    if (numbers[i] > max){
+      max=numbers[i];
+
+    }
   }
+
+    return max;
+  }
+    
+  
   
   /**
    * @param {number[]} numbers an array of integers
    * @returns {number} the range of the numbers (max - min)
    */
-  function getRange(numbers) {
-    // TODO
-  }
+  function getRange(numbers) {}
+  
+    
   
   /**
    * @param {number[]} numbers an array of integers
    * @returns {number[]} the even numbers in the array
    */
-  function getEvens(numbers) {
-    // TODO
-  }
-  
+  function getEvens(numbers) {}
+
   /**
    * @param {number[]} numbers an array of integers
    * @returns {number[]} the odd numbers in the array
