@@ -104,7 +104,10 @@ const userInputString = prompt(
    * @param {number[]} numbers an array of integers
    * @returns {number} the range of the numbers (max - min)
    */
-  function getRange(numbers) {}
+  function getRange(numbers) {
+    let range = getMax(numbers)-getMin(numbers);
+    return range;
+  }
   
     
   
@@ -112,10 +115,34 @@ const userInputString = prompt(
    * @param {number[]} numbers an array of integers
    * @returns {number[]} the even numbers in the array
    */
-  function getEvens(numbers) {}
+  function getEvens(numbers) {
+    let even = [];
+    let i = 0;
+    for (let i = 0; i < numbers.length; i++){
+      if (numbers [i] % 2 == 0)
+      even.push(numbers[i]);
+
+    }
+return even
+
+  }
 
   /**
    * @param {number[]} numbers an array of integers
    * @returns {number[]} the odd numbers in the array
    */
-  function getOdds(numbers){}
+  function getOdds(numbers){
+    let odd = [];
+    let i = 0;
+    for (let i = 0; i < numbers.length; i++){
+      if (numbers [i] % 2 == 1)
+      odd.push(numbers[i]);
+
+    }
+return odd
+
+
+
+
+
+  }
